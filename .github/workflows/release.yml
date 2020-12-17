@@ -22,7 +22,7 @@ jobs:
 
       - name: Install SQlite3
         run: |
-          apt-get install sqlite3
+          sudo apt-get install sqlite3
 
       - name: Initialise sqlite3 database
         run: |
