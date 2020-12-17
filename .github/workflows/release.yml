@@ -24,7 +24,7 @@ jobs:
         run: |
           apt-get install sqlite3
 
-      - id: Initialise sqlite3 database
+      - name: Initialise sqlite3 database
         run: |
           sqlite3 seed.db '.read seed/seed.ddl'
           sqlite3 seed.db '.read seed/seed.sql'
