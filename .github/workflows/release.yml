@@ -28,6 +28,7 @@ jobs:
         run: |
           sqlite3 seed.db '.read seed/seed.ddl'
           sqlite3 seed.db '.read seed/seed.sql'
+          sqlite3 seed.db '.read seed/migrations.sql'
 
       - name: Prepare Artifact
         shell: bash
